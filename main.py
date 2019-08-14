@@ -15,7 +15,7 @@ transform = transforms.Compose([
 ])
 
 #Load up the model
-model = torch.load('resnet_model.pt', map_location='cpu')
+model = torch.load('model.pth', map_location='cpu')
 model = model.module
 
 #Dictionary of classes and the BGR value to display
