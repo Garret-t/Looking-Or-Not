@@ -14,10 +14,11 @@ Take input from the webcam and determine whether or not I am looking at the scre
 - Profit?
 
 ## Files
-The Jupyter Notebook file is used to generate the trained model, which I did through the use of Google Collab. Then the python file is where the model is loaded and used by taking in images via OpenCV. 
+All the data I collected from google images is in the datasets folder. The Jupyter Notebook file is used to generate the trained model, which I did through the use of Google Collab. That model is saved as a .pth file. Then the python file loads the .pth file and uses the model by taking in images via OpenCV.
 
 ## Results
 I was able to achieve roughly 70% accuracy with the GoogleNet inception architecture. Bigger architectures such as the Resnet architecture proved better accuracy (about 80%) at the cost of extremely slow performance. However, with a more capable machine, the ResNet architecture would likely be better suited for the job.  
 
 Video feed from the webcam is input into a convolutional neural network and then decerns whether or not the person is looking at the camera.
+
 ![](https://i.imgur.com/xwNRJ1H.gif)
